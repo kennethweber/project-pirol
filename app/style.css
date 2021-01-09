@@ -1,3 +1,110 @@
+/*Project Pirol - The 3D-printed digital cuckoo clock
+Copyright (C) 2020  Kenneth Weber - https://github.com/kennethweber
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
+
+ @font-face { font-family: 'Montserrat'; src: url('fonts/Montserrat/Montserrat-Regular.ttf'); } 
+ @font-face { font-family: 'Montserrat'; font-weight: bold; src: url('fonts/Montserrat/Montserrat-Bold.ttf');}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: red;
+	background-color: #000000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#birdhouseOpening {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 240px;
+    width: 240px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #D2F0F6;
+	text-align: center;
+}
+
+#dateTimeLabel {
+	margin-top: 30px;
+}
+
+#time {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	display: inline-flex;
+  	align-items: center;
+}
+
+#h, #m, #s {
+	width: 40px;
+}
+
+#h {
+	text-align: right;
+	margin-right: 3px;
+}
+
+#s {
+	text-align: left;
+	margin-left: 5px;
+}
+
+.clockDevider {
+	width: 7px;
+}
+
+#date {
+	padding: 0;
+	margin: 0;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#bird {
+	position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#stage {
+	position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.stageTop {
+	background-color: #D35400;
+	width: 170px;
+	height: 7px;
+	margin: 0 auto;
+}
+
+.stageBottom {
+	background-color: #D35400;
+	width: 7px;
+	height: 62px;
+	margin: 0 auto;
 }

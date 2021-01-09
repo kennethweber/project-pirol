@@ -1,3 +1,19 @@
+<!-- Project Pirol - The 3D-printed digital cuckoo clock
+Copyright (C) 2020  Kenneth Weber - https://github.com/kennethweber
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,9 +24,26 @@
     <title>Project Pirol</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div id="birdhouseOpening">
+      <div id="dateTimeLabel">
+        <div id="time">
+          <div id="h"></div>
+          <div class="clockDevider">:</div>
+          <div id="m"></div>
+          <div class="clockDevider">:</div>
+          <div id="s"></div>
+        </div>
+        <h2 id="date"></h2>
+    </div>
+    <div id="bird">
+      <object data="img/pirol.svg" type="image/svg+xml"></object>
+    </div>
+      <div id="stage">
+        <div class="stageTop"></div>
+        <div class="stageBottom"></div>
+      </div>
+  </div>
 
-    
     <script src="functions.js"></script>
   </body>
 </html>
