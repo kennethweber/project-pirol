@@ -38,8 +38,13 @@ function displayDateAndTime(){
 	document.getElementById("m").innerHTML = m;
 	document.getElementById("s").innerHTML = s;
 
-	//document.getElementById("time").innerHTML = clock;
 
+	if(m == '00' && s == '00') {
+		playBirdSound();
+		console.log('playBirdSound() started');
+	}
+
+	console.log('Min' + m + 'sek' + s ); 
 
 
 	//Display current date
@@ -61,7 +66,14 @@ function displayDateAndTime(){
 
 	document.getElementById("date").innerHTML = date;
 
+
 	setTimeout(displayDateAndTime, 1000);
 }
 
 displayDateAndTime();
+
+//play bird sound
+function playBirdSound() {
+  var audio = new Audio('sounds/416529__inspectorj__bird-whistling-single-robin-a.mp3');
+  audio.play();
+}
